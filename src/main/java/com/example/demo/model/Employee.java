@@ -1,9 +1,14 @@
 package com.example.demo.model;
 
+import java.util.List;
+
 public class Employee {
 	private Long id ;
 	private String firstName;
 	private String lastName;
+	
+	private List<Compte> comptes;
+	
 	public Long getId() {
 		return id;
 	}
@@ -28,6 +33,21 @@ public class Employee {
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
+	public List<Compte> getComptes() {
+		return comptes;
+	}
+	public void setComptes(List<Compte> comptes) {
+		this.comptes = comptes;
+	}
+	public Employee(Long id, String firstName, String lastName,
+			List<Compte> comptes) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.comptes = comptes;
+	}
+	
 	
 	
 

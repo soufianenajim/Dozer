@@ -4,21 +4,20 @@
           xsi:schemaLocation="http://dozer.sourceforge.net
           http://dozer.sourceforge.net/schema/beanmapping.xsd">
           
-  <mapping map-id="EMPLOYEE_NAME" map-empty-string="false"
+  <mapping map-id="COMPTE_EMPLOYEE" map-empty-string="false"
 		map-null="false" wildcard="false" > 
-    <class-a>com.example.demo.model.Employee</class-a>
-    <class-b>com.example.demo.DTO.EmployeDTO</class-b>   
+    <class-a>com.example.demo.model.Compte</class-a>
+    <class-b>com.example.demo.DTO.CompteDTO</class-b>   
 
      <field>
-      <a>firstName</a>
-      <b>firstName</b>
+      <a>salaire</a>
+      <b>salaire</b>
     </field>
-    
-     
-   <field map-id="COMPTE_EMPLOYEE" >
-      <a>comptes</a>
-      <b>comptes</b>
-    </field>  </mapping>  
+    <field-exclude>
+      <a>taux</a>
+      <b>taux</b>
+    </field-exclude>
+  </mapping>  
 
   
 
