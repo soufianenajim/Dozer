@@ -1,6 +1,6 @@
-package com.example.DTO;
+package com.example.demo.model;
 
-public class EmployeDTO {
+public class Employee {
 	private Long id ;
 	private String firstName;
 	private String lastName;
@@ -22,5 +22,13 @@ public class EmployeDTO {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+	public Employee(Long id, String firstName, String lastName) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
 	
+	
+
 }

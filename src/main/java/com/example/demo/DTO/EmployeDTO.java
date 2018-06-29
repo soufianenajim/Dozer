@@ -1,6 +1,6 @@
-package com.example.model;
+package com.example.demo.DTO;
 
-public class Employee {
+public class EmployeDTO {
 	private Long id ;
 	private String firstName;
 	private String lastName;
@@ -22,7 +22,10 @@ public class Employee {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+	@Override
+	public String toString() {
+		return "EmployeDTO [id=" + id + ", firstName=" + firstName
+				+ ", lastName=" + lastName + "]";
+	}
 	
-	
-
 }
