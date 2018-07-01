@@ -23,19 +23,20 @@ public class DozerMappingApplication {
 	
 	public static void main(String[] args) throws Exception {
 		
-		ApplicationContext ctx = SpringApplication.run(DozerMappingApplication.class, args);
-		EmployeeService employeService = ctx.getBean(EmployeeService.class);
-		List<Compte> comptes=Stream.of(new Compte(100.0,8000.0),new Compte(100.0,10000.0))
-				.collect(Collectors.toList());
-		
-		List<Employee> employes=Stream.of(new Employee(1L, "test", "test",comptes),new Employee(2L, "test1", "test1",comptes),new Employee(3L, "test2", "test2",comptes))
-				.collect(Collectors.toList());
-		EmployeDTO employeDTO=employeService.findEmploye(2L, employes);
-		System.out.println("employee DTO"+employeDTO);
-		
-		
-		System.out.println("run");
-		
+		SpringApplication.run(DozerMappingApplication.class, args);
+//		ApplicationContext ctx = SpringApplication.run(DozerMappingApplication.class, args);
+//		EmployeeService employeService = ctx.getBean(EmployeeService.class);
+//		List<Compte> comptes=Stream.of(new Compte(1L,100.0,8000.0),new Compte(2L,100.0,10000.0))
+//				.collect(Collectors.toList());
+//		
+//		List<Employee> employes=Stream.of(new Employee(1L, "test", "test",comptes),new Employee(2L, "test1", "test1",comptes),new Employee(3L, "test2", "test2",comptes))
+//				.collect(Collectors.toList());
+//		EmployeDTO employeDTO=employeService.findEmploye(2L, employes);
+//		System.out.println("employee DTO"+employeDTO);
+//		
+//		
+//		System.out.println("run");
+//		
 //	Employee employee=new Employee(1L, "test", "test");
 //		EmployeDTO employeDTO = new DozerBeanMapper().map(employee, EmployeDTO.class,"EMPLOYEE_NAME");
 //		System.out.println("employee DTO"+employeDTO);
