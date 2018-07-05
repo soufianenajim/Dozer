@@ -2,12 +2,20 @@ package com.example.demo.DTO;
 
 import java.util.List;
 
-public class EmployeDTO {
+public class EmployeeDTO {
 	private Long id ;
 	private String firstName;
 	private String lastName;
+	
+	
 	private List<CompteDTO> comptes;
 	
+	
+	public EmployeeDTO(String firstName, String lastName) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
 	public Long getId() {
 		return id;
 	}
@@ -38,7 +46,7 @@ public class EmployeDTO {
 		return "EmployeDTO [id=" + id + ", firstName=" + firstName
 				+ ", lastName=" + lastName + ", comptes=" + comptes + "]";
 	}
-	public EmployeDTO() {
+	public EmployeeDTO() {
 		super();
 		// TODO Auto-generated constructor stub
 	}

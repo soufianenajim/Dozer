@@ -1,31 +1,29 @@
 package com.example.demo;
 
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
-
-import com.example.demo.DTO.EmployeDTO;
-import com.example.demo.model.Compte;
-import com.example.demo.model.Employee;
-import com.example.demo.service.EmployeeService;
 
 
 @SpringBootApplication
 @ComponentScan("com.example") 
-public class DozerMappingApplication {
-	
+public class DozerMappingApplication{
 	
 	
 	public static void main(String[] args) throws Exception {
 		
 		SpringApplication.run(DozerMappingApplication.class, args);
-//		ApplicationContext ctx = SpringApplication.run(DozerMappingApplication.class, args);
-//		EmployeeService employeService = ctx.getBean(EmployeeService.class);
+//		Optional<Employee> employe1=Optional.empty() ;
+//		System.out.println("employe1"+employe1.get());
+		/*ApplicationContext ctx = SpringApplication.run(DozerMappingApplication.class, args);
+			EmployeeService employeeService = ctx.getBean(EmployeeService.class);
+	
+		
+		employeeService.findByCritere().forEach(e->{
+			System.out.println("employe"+e);
+			
+		});
+	*/	
 //		List<Compte> comptes=Stream.of(new Compte(1L,100.0,8000.0),new Compte(2L,100.0,10000.0))
 //				.collect(Collectors.toList());
 //		
@@ -42,4 +40,7 @@ public class DozerMappingApplication {
 //		System.out.println("employee DTO"+employeDTO);
 //		
 	}
+
+
+	
 }

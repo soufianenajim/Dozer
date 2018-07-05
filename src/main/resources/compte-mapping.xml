@@ -13,10 +13,29 @@
       <a>salaire</a>
       <b>salaire</b>
     </field>
-    <field-exclude>
+    <field>
       <a>taux</a>
       <b>taux</b>
-    </field-exclude>
+    </field>
+    <field map-id="EMPLOYEE_COMPTE">
+			<a>employee</a>
+			<b>employee</b>
+		</field>
+  </mapping>  
+   <mapping map-id="COMPTE_EMPLOYE" map-empty-string="false"
+		map-null="false" wildcard="false" > 
+    <class-a>com.example.demo.model.Compte</class-a>
+    <class-b>com.example.demo.DTO.CompteDTO</class-b>   
+
+     <field>
+      <a>salaire</a>
+      <b>salaire</b>
+    </field>
+    <field>
+      <a>taux</a>
+      <b>taux</b>
+    </field>
+   
   </mapping>  
 
   

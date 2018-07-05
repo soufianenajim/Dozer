@@ -35,6 +35,10 @@ public class Employee extends Historized implements Serializable{
 	private List<Compte> comptes;
 	
 	
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	public String getFirstName() {
 		return firstName;
 	}
@@ -60,12 +64,12 @@ public class Employee extends Historized implements Serializable{
 	public void setComptes(List<Compte> comptes) {
 		this.comptes = comptes;
 	}
-	public Employee(long id, String firstName,
-			String lastName, List<Compte> comptes) {
-		this.id=id;
+	public Employee( String firstName,
+			String lastName) {
+		
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.comptes = comptes;
+		
 	}
 
 	

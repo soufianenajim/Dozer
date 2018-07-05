@@ -4,6 +4,7 @@ public class CompteDTO {
 
 	private double taux ;
 	private double salaire;
+	private EmployeeDTO employee;
 	public double getTaux() {
 		return taux;
 	}
@@ -15,6 +16,13 @@ public class CompteDTO {
 	}
 	public void setSalaire(double salaire) {
 		this.salaire = salaire;
+	}
+	
+	public EmployeeDTO getEmployee() {
+		return employee;
+	}
+	public void setEmployee(EmployeeDTO employee) {
+		this.employee = employee;
 	}
 	public CompteDTO(double taux, double salaire) {
 		super();

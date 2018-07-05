@@ -34,6 +34,10 @@ public class Compte extends Historized implements Serializable {
 	private Employee employee;
 	
 	
+	public Compte() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	public long getId() {
 		return id;
 	}
